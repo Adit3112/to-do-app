@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+/* root */
+:root{
+    --champagne:#F7E7CE;
+}
+
+
+
+/* body */
+body{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    place-items: center;
+    background:var(--champagne);
+}
+
+
+
+/* container */
+.container{
+    width:80%;
+    /* height:60rem; */
+    height:95%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    /* background: url(./assets/pexels-yogendras31-1542620.jpg); */
+    background-size: cover;
+}
+
+
+
+/* heading section */
+header{
+    height:5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom:2rem;
+}
+
+/* main section */
+main{
+    height:70%;
+}
+main h4{
+    margin-bottom:1rem;
+    padding:1rem;
+    color: rgba(0,0,0,0.7);
+}
+
+
+/* tasks container */
+.taskcontainer {
+    overflow: scroll;
+    height:55%;
+    margin-bottom:2rem;
+}
+.taskcontainer::-webkit-scrollbar{
+    display:none;
+}
+/* tasks */
+.tasks {
+    margin-top:1rem;
+    overflow: scroll;
+}
+.tasks::-webkit-scrollbar{
+    display:none;
+}
+.tasks li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border:3px solid #0000007c;
+    font-size: 1.2rem;
+    list-style: none;
+    width:100%;
+    /* background: red; */
+    text-align:start;
+}
+.tasks li .fa-circle{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-left: 1px;
+    
+}
+.tasks li .fa-times{
+    font-size: 1.5rem;
+    margin-right:10px;
+
+}
+/* .tasks li .fa-star{
+    font-size: 1.5rem;
+    margin-right: 10px;
+    margin-left: 1px;
+    position:absolute;
+    right:14rem;
+} */
+
+
+/* completed tasks container */
+.compcont{
+    margin-top:1rem;
+    height:40%;
+    /* overflow:scroll; */
+}
+.compcont::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* completed tasks */
+.completed{
+    overflow:scroll;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    list-style: none;
+    width:100%;
+    height:80%;
+    overflow-x: auto;
+    /* background: red; */
+}
+.completed::-webkit-scrollbar{
+    display:none;
+}
+.completed li{
+    background: var(--champagne);
+    display:flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border:3px solid #0000007c;
+    font-size: 1.2rem;
+    list-style: none;
+    width:30%;
+}
+.completed i{
+    margin:0.5rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* footer section */
+footer{
+    position:fixed;
+    bottom:25px;
+    width:75%;
+    height:8rem;
+    background:#fff;
+}
+
+
+/* tasks maker */
+.taskmaker{
+    width:70%;
+    background:var(--champagne) ;
+    position:fixed;
+    bottom: 50px;
+    max-width:80%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height:4rem;
+    border-radius:1.5rem;
+
+}
+.taskmaker:hover{
+    box-shadow: 0 0 2px rgba(0,0,0,0.1);
+    transition: 0.2s all linear;
+}
+
+.taskmaker i{
+    font-size: 1.5rem;
+    padding:0 0 0 1.5rem;
+}
+.taskmaker input{
+    outline:none;
+    border:none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding:0 1rem;
+    height:100%;
+    width:80%;
+    background: transparent;
+    color:#000;
+}
+.taskmaker input[type="text"]::placeholder{
+    color:#000;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+i{
+    cursor:pointer;
+}

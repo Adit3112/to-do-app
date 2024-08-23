@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- cdn links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/289/185/png-transparent-hook-check-mark-check-completed-finish-to-do-todo-list-check-off-district-thumbnail.png" type="image/x-icon">
+</head>
+<body>
+    <!-- container div to center the page -->
+    <div class="container">
+        <header>
+            <h1 id="dayNow">My Day</h1>
+            <p id="dateNow">date</p>
+        </header>
+        <main>
+            <!-- div to contain uncompleted tasks -->
+            <div class="taskcontainer">
+                <h4>Tasks</h4>
+                <hr>
+                <ul class="tasks">
+                    <!-- <li>
+                        <i class="fa-regular fa-circle"></i>
+                        good morning
+                        <i class="fa-solid fa-xmark"></i>
+                    </li> -->
+                </ul>
+                
+            </div>
+            <!-- div to contain completed tasks -->
+            <div class="compcont">
+                <h4>Completed Tasks &nbsp;&nbsp;
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-caret-up"></i>
+                </h4>
+                <hr>
+                <ul class="completed">
+                    <!-- <li><i class="fa-solid fa-circle-check"></i></li>
+                    <li><i class="fa-solid fa-circle-check"></i></li> -->
+            </div>
+        </main>
+        <footer>
+            <div class="taskmaker">
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-plus"></i>
+                <input type="text" placeholder="Add a Task">
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
